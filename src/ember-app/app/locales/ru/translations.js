@@ -116,6 +116,62 @@ $.extend(true, translations, {
           caption: 'Главная',
           title: ''
         },
+        документы: {
+          caption: 'Документы',
+          title: 'Документы',
+          'i-i-s-gotovoe-prilozhenie-приход-денег-l': {
+            caption: 'Приход денег',
+            title: 'Приход денег'
+          },
+          'i-i-s-gotovoe-prilozhenie-расход-денег-l': {
+            caption: 'Расход денег',
+            title: 'Расход денег'
+          }
+        },
+        контрагенты: {
+          caption: 'Контрагенты',
+          title: 'Контрагенты',
+          'i-i-s-gotovoe-prilozhenie-клиенты-l': {
+            caption: 'Клиенты',
+            title: 'Клиенты'
+          },
+          'i-i-s-gotovoe-prilozhenie-поставщики-l': {
+            caption: 'Поставщики',
+            title: 'Поставщики'
+          }
+        },
+        сотрудники: {
+          caption: 'Сотрудники',
+          title: 'Сотрудники',
+          'i-i-s-gotovoe-prilozhenie-финансисты-l': {
+            caption: 'Финансисты',
+            title: 'Финансисты'
+          }
+        },
+        номенклатура: {
+          caption: 'Номенклатура',
+          title: 'Номенклатура',
+          'i-i-s-gotovoe-prilozhenie-материалы-l': {
+            caption: 'Материалы',
+            title: 'Материалы'
+          },
+          'i-i-s-gotovoe-prilozhenie-услуги-l': {
+            caption: 'Услуги',
+            title: 'Услуги'
+          },
+          'i-i-s-gotovoe-prilozhenie-товары-l': {
+            caption: 'Товары',
+            title: 'Товары'
+          }
+        },
+        регистры: {
+          caption: 'Регистры',
+          title: 'Регистры',
+          'i-i-s-gotovoe-prilozhenie-регистр-оборот-l': {
+            caption: 'Регистр оборотов',
+            title: 'Регистр оборот'
+          }
+        },
         'gotovoe-prilozhenie': {
           caption: 'Gotovoe_prilozhenie',
           title: 'Gotovoe_prilozhenie',
