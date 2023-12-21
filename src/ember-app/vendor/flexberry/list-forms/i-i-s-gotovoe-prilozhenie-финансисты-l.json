@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-gotovoe-prilozhenie-финансисты-e",
+  "editForm": "i-i-s-gotovoe-prilozhenie-финансисты-e",
+  "external": false,
+  "caption": "Финансисты",
+  "name": "IISGotovoe_prilozhenieФинансистыL",
+  "className": "ФинансистыL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-gotovoe-prilozhenie-финансисты",
+      "modelProjection": "ФинансистыL"
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+<h3 class="ui header">{{t "forms.i-i-s-gotovoe-prilozhenie-регистр-оборот-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-gotovoe-prilozhenie-регистр-оборот-e.приходДенег-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.приходДенег
+      displayAttributeName="iD"
+      autocomplete=true
+      relationName="приходДенег"
+      projection="ПриходДенегL"
+      title=(t "forms.i-i-s-gotovoe-prilozhenie-регистр-оборот-e.приходДенег-caption")
+      readonly=readonly
+      componentName="приходДенегLookup"
+      class=(if (v-get validationModel "приходДенег" "isInvalid") "error")
+      data-test-i-i-s-gotovoe-prilozhenie-регистр-оборот-e-приходДенег=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "приходДенег" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-gotovoe-prilozhenie-регистр-оборот-e.приходДенег.дата-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=true
+      value=model.приходДенег.дата
+      class=(if (v-get validationModel.приходДенег "дата" "isInvalid") "error")
+      data-test-i-i-s-gotovoe-prilozhenie-регистр-оборот-e-приходДенег-дата=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.приходДенег "дата" "message")}}
+  </div>
+  <div class="field" data-test-i-i-s-gotovoe-prilozhenie-регистр-оборот-e-приходДенег-расходПриход="true">
+    <label>{{t "forms.i-i-s-gotovoe-prilozhenie-регистр-оборот-e.приходДенег.расходПриход-caption"}}</label>
+    {{flexberry-dropdown
+      items=(flexberry-enum "i-i-s-gotovoe-prilozhenie-расход-приход")
+      value=model.приходДенег.расходПриход
+      class=(if (v-get validationModel.приходДенег "расходПриход" "isInvalid") "error")
+      readonly=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.приходДенег "расходПриход" "message")}}
+  </div>
+  <div class="field" data-test-i-i-s-gotovoe-prilozhenie-регистр-оборот-e-приходДенег-тип="true">
+    <label>{{t "forms.i-i-s-gotovoe-prilozhenie-регистр-оборот-e.приходДенег.тип-caption"}}</label>
+    {{flexberry-dropdown
+      items=(flexberry-enum "i-i-s-gotovoe-prilozhenie-тип")
+      value=model.приходДенег.тип
+      class=(if (v-get validationModel.приходДенег "тип" "isInvalid") "error")
+      readonly=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.приходДенег "тип" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.приходДенег.сумма
+      class=(if (v-get validationModel.приходДенег "сумма" "isInvalid") "error")
+      label=(t "forms.i-i-s-gotovoe-prilozhenie-регистр-оборот-e.приходДенег.сумма-caption")
+      data-test-i-i-s-gotovoe-prilozhenie-регистр-оборот-e-приходДенег-сумма=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.приходДенег "сумма" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-gotovoe-prilozhenie-регистр-оборот-e.расходДенег-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.расходДенег
+      displayAttributeName="iD"
+      autocomplete=true
+      relationName="расходДенег"
+      projection="РасходДенегL"
+      title=(t "forms.i-i-s-gotovoe-prilozhenie-регистр-оборот-e.расходДенег-caption")
+      readonly=readonly
+      componentName="расходДенегLookup"
+      class=(if (v-get validationModel "расходДенег" "isInvalid") "error")
+      data-test-i-i-s-gotovoe-prilozhenie-регистр-оборот-e-расходДенег=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "расходДенег" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-gotovoe-prilozhenie-регистр-оборот-e.расходДенег.дата-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=true
+      value=model.расходДенег.дата
+      class=(if (v-get validationModel.расходДенег "дата" "isInvalid") "error")
+      data-test-i-i-s-gotovoe-prilozhenie-регистр-оборот-e-расходДенег-дата=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.расходДенег "дата" "message")}}
+  </div>
+  <div class="field" data-test-i-i-s-gotovoe-prilozhenie-регистр-оборот-e-расходДенег-расходПриход="true">
+    <label>{{t "forms.i-i-s-gotovoe-prilozhenie-регистр-оборот-e.расходДенег.расходПриход-caption"}}</label>
+    {{flexberry-dropdown
+      items=(flexberry-enum "i-i-s-gotovoe-prilozhenie-расход-приход")
+      value=model.расходДенег.расходПриход
+      class=(if (v-get validationModel.расходДенег "расходПриход" "isInvalid") "error")
+      readonly=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.расходДенег "расходПриход" "message")}}
+  </div>
+  <div class="field" data-test-i-i-s-gotovoe-prilozhenie-регистр-оборот-e-расходДенег-тип="true">
+    <label>{{t "forms.i-i-s-gotovoe-prilozhenie-регистр-оборот-e.расходДенег.тип-caption"}}</label>
+    {{flexberry-dropdown
+      items=(flexberry-enum "i-i-s-gotovoe-prilozhenie-тип")
+      value=model.расходДенег.тип
+      class=(if (v-get validationModel.расходДенег "тип" "isInvalid") "error")
+      readonly=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.расходДенег "тип" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.расходДенег.сумма
+      class=(if (v-get validationModel.расходДенег "сумма" "isInvalid") "error")
+      label=(t "forms.i-i-s-gotovoe-prilozhenie-регистр-оборот-e.расходДенег.сумма-caption")
+      data-test-i-i-s-gotovoe-prilozhenie-регистр-оборот-e-расходДенег-сумма=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.расходДенег "сумма" "message")}}
+  </div>
+</form>

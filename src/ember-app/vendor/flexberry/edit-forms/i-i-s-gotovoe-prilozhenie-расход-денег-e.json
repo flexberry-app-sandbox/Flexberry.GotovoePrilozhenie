@@ -1,0 +1,39 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Финансисты",
+      "projection": "ФинансистыL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Поставщики",
+      "projection": "ПоставщикиL",
+      "detailModelName": null
+    },
+    {
+      "master": "материалы",
+      "displayAttributeName": "наименование",
+      "required": true,
+      "relationName": "ПереченьМат.Материалы",
+      "projection": "МатериалыL",
+      "detailModelName": "i-i-s-gotovoe-prilozhenie-перечень-мат"
+    }
+  ],
+  "external": false,
+  "caption": "Расход денег",
+  "name": "IISGotovoe_prilozhenieРасходДенегE",
+  "className": "РасходДенегE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-gotovoe-prilozhenie-расход-денег",
+      "modelProjection": "РасходДенегE"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-gotovoe-prilozhenie-регистр-оборот-e",
+  "editForm": "i-i-s-gotovoe-prilozhenie-регистр-оборот-e",
+  "external": false,
+  "caption": "Регистр оборот",
+  "name": "IISGotovoe_prilozhenieРегистрОборотL",
+  "className": "РегистрОборотL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-gotovoe-prilozhenie-регистр-оборот",
+      "modelProjection": "РегистрОборотL"
+    }
+  ]
+}

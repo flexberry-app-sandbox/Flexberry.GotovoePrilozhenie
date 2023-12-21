@@ -1,0 +1,78 @@
+﻿{
+  "applicationCaption": "Gotovoe_prilozhenie",
+  "applicationTitle": "Gotovoe_prilozhenie",
+  "items": [
+    {
+      "link": null,
+      "menuName": "gotovoe-prilozhenie",
+      "caption": "Gotovoe_prilozhenie",
+      "title": "Gotovoe_prilozhenie",
+      "children": [
+        {
+          "link": "i-i-s-gotovoe-prilozhenie-финансисты-l",
+          "menuName": null,
+          "caption": "Финансисты",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-gotovoe-prilozhenie-приход-денег-l",
+          "menuName": null,
+          "caption": "Приход денег",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-gotovoe-prilozhenie-клиенты-l",
+          "menuName": null,
+          "caption": "Клиенты",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-gotovoe-prilozhenie-расход-денег-l",
+          "menuName": null,
+          "caption": "Расход денег",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-gotovoe-prilozhenie-материалы-l",
+          "menuName": null,
+          "caption": "Материалы",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-gotovoe-prilozhenie-поставщики-l",
+          "menuName": null,
+          "caption": "Поставщики",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-gotovoe-prilozhenie-услуги-l",
+          "menuName": null,
+          "caption": "Услуги",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-gotovoe-prilozhenie-регистр-оборот-l",
+          "menuName": null,
+          "caption": "Регистр оборот",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-gotovoe-prilozhenie-товары-l",
+          "menuName": null,
+          "caption": "Товары",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

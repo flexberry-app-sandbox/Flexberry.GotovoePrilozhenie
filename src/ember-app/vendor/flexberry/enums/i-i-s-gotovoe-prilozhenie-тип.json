@@ -1,0 +1,9 @@
+﻿{
+  "nameSpace": "IIS.Gotovoe_prilozhenie",
+  "className": "Тип",
+  "enumObjects": {
+    "1": "Реализация товаров",
+    "2": "Реализация услуг",
+    "3": "Закупка материалов"
+  }
+}

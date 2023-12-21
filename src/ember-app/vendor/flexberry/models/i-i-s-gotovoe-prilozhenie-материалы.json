@@ -1,0 +1,138 @@
+﻿{
+  "name": "IISGotovoe_prilozhenieМатериалы",
+  "modelName": "i-i-s-gotovoe-prilozhenie-материалы",
+  "className": "Материалы",
+  "nameSpace": "IIS.Gotovoe_prilozhenie",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "iD",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "единицы",
+      "type": "i-i-s-gotovoe-prilozhenie-единицы",
+      "flexberryType": "Единицы",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "марка",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "наименование",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "стоимость",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "МатериалыE",
+      "modelName": "i-i-s-gotovoe-prilozhenie-материалы",
+      "attrs": [
+        {
+          "name": "iD",
+          "caption": "ID",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "марка",
+          "caption": "Марка",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "единицы",
+          "caption": "Единицы",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "стоимость",
+          "caption": "Стоимость",
+          "hidden": false,
+          "index": 4
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "МатериалыL",
+      "modelName": "i-i-s-gotovoe-prilozhenie-материалы",
+      "attrs": [
+        {
+          "name": "iD",
+          "caption": "ID",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "марка",
+          "caption": "Марка",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "единицы",
+          "caption": "Единицы",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "стоимость",
+          "caption": "Стоимость",
+          "hidden": false,
+          "index": 4
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

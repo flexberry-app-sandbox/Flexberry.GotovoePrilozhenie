@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Материалы",
+  "name": "IISGotovoe_prilozhenieМатериалыE",
+  "className": "МатериалыE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-gotovoe-prilozhenie-материалы",
+      "modelProjection": "МатериалыE"
+    }
+  ]
+}

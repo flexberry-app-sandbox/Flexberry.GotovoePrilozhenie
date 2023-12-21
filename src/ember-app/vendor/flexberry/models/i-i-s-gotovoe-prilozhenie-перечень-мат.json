@@ -1,0 +1,83 @@
+﻿{
+  "name": "IISGotovoe_prilozhenieПереченьМат",
+  "modelName": "i-i-s-gotovoe-prilozhenie-перечень-мат",
+  "className": "ПереченьМат",
+  "nameSpace": "IIS.Gotovoe_prilozhenie",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "количество",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "материалы",
+      "relatedTo": "i-i-s-gotovoe-prilozhenie-материалы",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "расходДенег",
+      "relatedTo": "i-i-s-gotovoe-prilozhenie-расход-денег",
+      "inverse": "переченьМат"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ПереченьМатE",
+      "modelName": "i-i-s-gotovoe-prilozhenie-перечень-мат",
+      "attrs": [
+        {
+          "name": "количество",
+          "caption": "Количество",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Наименование",
+          "lookupValueField": "наименование",
+          "relationName": "Материалы",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": true,
+              "index": 1
+            },
+            {
+              "name": "стоимость",
+              "caption": "Стоимость",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": 0,
+          "type": "standard",
+          "caption": "Материалы",
+          "name": "материалы",
+          "relatedTo": "i-i-s-gotovoe-prilozhenie-материалы",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

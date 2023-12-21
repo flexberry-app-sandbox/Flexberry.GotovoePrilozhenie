@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-gotovoe-prilozhenie-товары-e",
+  "editForm": "i-i-s-gotovoe-prilozhenie-товары-e",
+  "external": false,
+  "caption": "Товары",
+  "name": "IISGotovoe_prilozhenieТоварыL",
+  "className": "ТоварыL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-gotovoe-prilozhenie-товары",
+      "modelProjection": "ТоварыL"
+    }
+  ]
+}

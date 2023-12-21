@@ -1,0 +1,8 @@
+﻿{
+  "nameSpace": "IIS.Gotovoe_prilozhenie",
+  "className": "РасходПриход",
+  "enumObjects": {
+    "Расход": "Расход",
+    "Приход": "Приход"
+  }
+}

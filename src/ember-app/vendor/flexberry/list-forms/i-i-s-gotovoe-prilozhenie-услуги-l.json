@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-gotovoe-prilozhenie-услуги-e",
+  "editForm": "i-i-s-gotovoe-prilozhenie-услуги-e",
+  "external": false,
+  "caption": "Услуги",
+  "name": "IISGotovoe_prilozhenieУслугиL",
+  "className": "УслугиL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-gotovoe-prilozhenie-услуги",
+      "modelProjection": "УслугиL"
+    }
+  ]
+}

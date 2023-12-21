@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-gotovoe-prilozhenie-расход-денег-e",
+  "editForm": "i-i-s-gotovoe-prilozhenie-расход-денег-e",
+  "external": false,
+  "caption": "Расход денег",
+  "name": "IISGotovoe_prilozhenieРасходДенегL",
+  "className": "РасходДенегL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-gotovoe-prilozhenie-расход-денег",
+      "modelProjection": "РасходДенегL"
+    }
+  ]
+}

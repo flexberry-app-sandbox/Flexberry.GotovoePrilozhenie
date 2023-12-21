@@ -1,0 +1,227 @@
+﻿{
+  "name": "IISGotovoe_prilozhenieРегистрОборот",
+  "modelName": "i-i-s-gotovoe-prilozhenie-регистр-оборот",
+  "className": "РегистрОборот",
+  "nameSpace": "IIS.Gotovoe_prilozhenie",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "приходДенег",
+      "relatedTo": "i-i-s-gotovoe-prilozhenie-приход-денег",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "расходДенег",
+      "relatedTo": "i-i-s-gotovoe-prilozhenie-расход-денег",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "РегистрОборотE",
+      "modelName": "i-i-s-gotovoe-prilozhenie-регистр-оборот",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": "ID",
+          "lookupValueField": "iD",
+          "relationName": "ПриходДенег",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "iD",
+              "caption": "ID",
+              "hidden": true,
+              "index": 1
+            },
+            {
+              "name": "дата",
+              "caption": "Дата",
+              "hidden": false,
+              "index": 2
+            },
+            {
+              "name": "расходПриход",
+              "caption": "Расход/приход",
+              "hidden": false,
+              "index": 3
+            },
+            {
+              "name": "тип",
+              "caption": "Тип",
+              "hidden": false,
+              "index": 4
+            },
+            {
+              "name": "сумма",
+              "caption": "Сумма",
+              "hidden": false,
+              "index": 5
+            }
+          ],
+          "index": 0,
+          "type": "standard",
+          "caption": "Приход денег",
+          "name": "приходДенег",
+          "relatedTo": "i-i-s-gotovoe-prilozhenie-приход-денег",
+          "inverse": null
+        },
+        {
+          "lookupValue": "ID",
+          "lookupValueField": "iD",
+          "relationName": "РасходДенег",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "iD",
+              "caption": "ID",
+              "hidden": true,
+              "index": 7
+            },
+            {
+              "name": "дата",
+              "caption": "Дата",
+              "hidden": false,
+              "index": 8
+            },
+            {
+              "name": "расходПриход",
+              "caption": "Расход/приход",
+              "hidden": false,
+              "index": 9
+            },
+            {
+              "name": "тип",
+              "caption": "Тип",
+              "hidden": false,
+              "index": 10
+            },
+            {
+              "name": "сумма",
+              "caption": "Сумма",
+              "hidden": false,
+              "index": 11
+            }
+          ],
+          "index": 6,
+          "type": "standard",
+          "caption": "Расход денег",
+          "name": "расходДенег",
+          "relatedTo": "i-i-s-gotovoe-prilozhenie-расход-денег",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "РегистрОборотL",
+      "modelName": "i-i-s-gotovoe-prilozhenie-регистр-оборот",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ПриходДенег",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "iD",
+              "caption": "ID",
+              "hidden": false,
+              "index": 0
+            },
+            {
+              "name": "дата",
+              "caption": "Дата",
+              "hidden": false,
+              "index": 1
+            },
+            {
+              "name": "расходПриход",
+              "caption": "Расход/приход",
+              "hidden": false,
+              "index": 2
+            },
+            {
+              "name": "тип",
+              "caption": "Тип",
+              "hidden": false,
+              "index": 3
+            },
+            {
+              "name": "сумма",
+              "caption": "Сумма",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "ID",
+          "name": "приходДенег",
+          "relatedTo": "i-i-s-gotovoe-prilozhenie-приход-денег",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "РасходДенег",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "iD",
+              "caption": "ID",
+              "hidden": false,
+              "index": 5
+            },
+            {
+              "name": "дата",
+              "caption": "Дата",
+              "hidden": false,
+              "index": 6
+            },
+            {
+              "name": "расходПриход",
+              "caption": "Расход/приход",
+              "hidden": false,
+              "index": 7
+            },
+            {
+              "name": "тип",
+              "caption": "Тип",
+              "hidden": false,
+              "index": 8
+            },
+            {
+              "name": "сумма",
+              "caption": "Сумма",
+              "hidden": false,
+              "index": 9
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "ID",
+          "name": "расходДенег",
+          "relatedTo": "i-i-s-gotovoe-prilozhenie-расход-денег",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

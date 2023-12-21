@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-gotovoe-prilozhenie-приход-денег-e",
+  "editForm": "i-i-s-gotovoe-prilozhenie-приход-денег-e",
+  "external": false,
+  "caption": "Приход денег",
+  "name": "IISGotovoe_prilozhenieПриходДенегL",
+  "className": "ПриходДенегL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-gotovoe-prilozhenie-приход-денег",
+      "modelProjection": "ПриходДенегL"
+    }
+  ]
+}

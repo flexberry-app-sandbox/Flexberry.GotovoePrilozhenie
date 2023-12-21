@@ -1,0 +1,92 @@
+﻿{
+  "name": "IISGotovoe_prilozhenieСоставТовара",
+  "modelName": "i-i-s-gotovoe-prilozhenie-состав-товара",
+  "className": "СоставТовара",
+  "nameSpace": "IIS.Gotovoe_prilozhenie",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "единицы",
+      "type": "i-i-s-gotovoe-prilozhenie-единицы",
+      "flexberryType": "Единицы",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "количество",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "материалы",
+      "relatedTo": "i-i-s-gotovoe-prilozhenie-материалы",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "товары",
+      "relatedTo": "i-i-s-gotovoe-prilozhenie-товары",
+      "inverse": "составТовара"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "СоставТовараE",
+      "modelName": "i-i-s-gotovoe-prilozhenie-состав-товара",
+      "attrs": [
+        {
+          "name": "количество",
+          "caption": "Количество",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "единицы",
+          "caption": "Единицы",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Наименование",
+          "lookupValueField": "наименование",
+          "relationName": "Материалы",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": true,
+              "index": 3
+            }
+          ],
+          "index": 2,
+          "type": "standard",
+          "caption": "Материалы",
+          "name": "материалы",
+          "relatedTo": "i-i-s-gotovoe-prilozhenie-материалы",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

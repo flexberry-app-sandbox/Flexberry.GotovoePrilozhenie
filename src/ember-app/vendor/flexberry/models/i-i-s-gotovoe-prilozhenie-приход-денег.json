@@ -1,0 +1,265 @@
+﻿{
+  "name": "IISGotovoe_prilozhenieПриходДенег",
+  "modelName": "i-i-s-gotovoe-prilozhenie-приход-денег",
+  "className": "ПриходДенег",
+  "nameSpace": "IIS.Gotovoe_prilozhenie",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "iD",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "расходПриход",
+      "type": "i-i-s-gotovoe-prilozhenie-расход-приход",
+      "flexberryType": "РасходПриход",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "сумма",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "тип",
+      "type": "i-i-s-gotovoe-prilozhenie-тип",
+      "flexberryType": "Тип",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "клиенты",
+      "relatedTo": "i-i-s-gotovoe-prilozhenie-клиенты",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "финансисты",
+      "relatedTo": "i-i-s-gotovoe-prilozhenie-финансисты",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "переченьУслуг",
+      "relatedTo": "i-i-s-gotovoe-prilozhenie-перечень-услуг",
+      "inverse": "приходДенег"
+    },
+    {
+      "name": "переченьТоваров",
+      "relatedTo": "i-i-s-gotovoe-prilozhenie-перечень-товаров",
+      "inverse": "приходДенег"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ПриходДенегE",
+      "modelName": "i-i-s-gotovoe-prilozhenie-приход-денег",
+      "attrs": [
+        {
+          "name": "iD",
+          "caption": "ID",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "расходПриход",
+          "caption": "Расход/приход",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "тип",
+          "caption": "Тип",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "сумма",
+          "caption": "Сумма",
+          "hidden": false,
+          "index": 4
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "ФИО",
+          "lookupValueField": "фИО",
+          "relationName": "Финансисты",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО финансиста",
+              "hidden": true,
+              "index": 6
+            }
+          ],
+          "index": 5,
+          "type": "standard",
+          "caption": "Финансисты",
+          "name": "финансисты",
+          "relatedTo": "i-i-s-gotovoe-prilozhenie-финансисты",
+          "inverse": null
+        },
+        {
+          "lookupValue": "ФИО",
+          "lookupValueField": "фИО",
+          "relationName": "Клиенты",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО клиента",
+              "hidden": true,
+              "index": 8
+            }
+          ],
+          "index": 7,
+          "type": "standard",
+          "caption": "Клиенты",
+          "name": "клиенты",
+          "relatedTo": "i-i-s-gotovoe-prilozhenie-клиенты",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "ПереченьУслугE",
+          "caption": "Перечень услуг",
+          "name": "переченьУслуг",
+          "relatedTo": "i-i-s-gotovoe-prilozhenie-перечень-услуг",
+          "inverse": null
+        },
+        {
+          "projectionName": "ПереченьТоваровE",
+          "caption": "Перечень товаров",
+          "name": "переченьТоваров",
+          "relatedTo": "i-i-s-gotovoe-prilozhenie-перечень-товаров",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ПриходДенегL",
+      "modelName": "i-i-s-gotovoe-prilozhenie-приход-денег",
+      "attrs": [
+        {
+          "name": "iD",
+          "caption": "ID",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "расходПриход",
+          "caption": "Расход/приход",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "тип",
+          "caption": "Тип",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "сумма",
+          "caption": "Сумма",
+          "hidden": false,
+          "index": 4
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Финансисты",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО финансиста",
+              "hidden": false,
+              "index": 5
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "ФИО финансиста",
+          "name": "финансисты",
+          "relatedTo": "i-i-s-gotovoe-prilozhenie-финансисты",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Клиенты",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО клиента",
+              "hidden": false,
+              "index": 6
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "ФИО клиента",
+          "name": "клиенты",
+          "relatedTo": "i-i-s-gotovoe-prilozhenie-клиенты",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

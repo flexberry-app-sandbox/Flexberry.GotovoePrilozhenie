@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistencehttp://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="Olingo4PG">
+        <class>Gotovoe_prilozhenie.model.PerechenUslug</class>
+        <class>Gotovoe_prilozhenie.model.Finansisty</class>
+        <class>Gotovoe_prilozhenie.model.PrixodDeneg</class>
+        <class>Gotovoe_prilozhenie.model.Klienty</class>
+        <class>Gotovoe_prilozhenie.model.SostavTovara</class>
+        <class>Gotovoe_prilozhenie.model.RasxodDeneg</class>
+        <class>Gotovoe_prilozhenie.model.Materialy</class>
+        <class>Gotovoe_prilozhenie.model.PerechenTovarov</class>
+        <class>Gotovoe_prilozhenie.model.PerechenMat</class>
+        <class>Gotovoe_prilozhenie.model.Postavshhiki</class>
+        <class>Gotovoe_prilozhenie.model.Uslugi</class>
+        <class>Gotovoe_prilozhenie.model.RegistrOborot</class>
+        <class>Gotovoe_prilozhenie.model.Tovary</class>
+        <class>Gotovoe_prilozhenie.model.FlexberryAdvLimit</class>
+        <class>Gotovoe_prilozhenie.model.NewPlatformFlexberryFlexberryUserSetting</class>
+        <class>Gotovoe_prilozhenie.model.NewPlatformFlexberryServicesLock</class>
+        <class>Gotovoe_prilozhenie.model.IISCaseberryLoggingObjectsApplicationLog</class>
+
+    </persistence-unit>
+</persistence>

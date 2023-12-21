@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-gotovoe-prilozhenie-материалы-e",
+  "editForm": "i-i-s-gotovoe-prilozhenie-материалы-e",
+  "external": false,
+  "caption": "Материалы",
+  "name": "IISGotovoe_prilozhenieМатериалыL",
+  "className": "МатериалыL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-gotovoe-prilozhenie-материалы",
+      "modelProjection": "МатериалыL"
+    }
+  ]
+}

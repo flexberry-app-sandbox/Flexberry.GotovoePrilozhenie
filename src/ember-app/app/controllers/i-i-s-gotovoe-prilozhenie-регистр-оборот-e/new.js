@@ -1,0 +1,4 @@
+import IISGotovoe_prilozhenieРегистрОборотEController from '../i-i-s-gotovoe-prilozhenie-регистр-оборот-e';
+
+var IISGotovoe_prilozhenieРегистрОборотENewController = IISGotovoe_prilozhenieРегистрОборотEController;
+export default IISGotovoe_prilozhenieРегистрОборотENewController;
